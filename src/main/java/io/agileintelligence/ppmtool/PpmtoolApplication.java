@@ -9,8 +9,6 @@ import org.springframework.context.annotation.Import;
 import io.agileintelligence.ppmtool.web.ProjectController;
 
 @SpringBootApplication
-@Import(io.agileintelligence.ppmtool.exceptions.CustomResponseEntityResponseHandler.class)
-@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 public class PpmtoolApplication {
 
 	public static void main(String[] args) {
