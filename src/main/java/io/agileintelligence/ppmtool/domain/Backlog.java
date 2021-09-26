@@ -17,6 +17,16 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Backlog {
+	public List<ProjectTask> getProjectTasks() {
+		return projectTasks;
+	}
+
+
+	public void setProjectTasks(List<ProjectTask> projectTasks) {
+		this.projectTasks = projectTasks;
+	}
+
+
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
@@ -28,7 +38,7 @@ public class Backlog {
 	@JsonIgnore
 	private Project project;
 	
-	@OneToMany(cascade=CascadeType.ALL, fetch= FetchType.EAGER,mappedBy="backlog")
+	@OneToMany(cascade=CascadeType.REFRESH, fetch= FetchType.EAGER,mappedBy="backlog",orphanRemoval=true)
 	private List<ProjectTask> projectTasks = new ArrayList<>();
 	
 	
