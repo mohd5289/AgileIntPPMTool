@@ -4,6 +4,10 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+=======
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+>>>>>>> master
 
 ### STS ###
 .apt_generated
@@ -22,6 +26,7 @@ target/
 
 ### NetBeans ###
 /nbproject/private/
+<<<<<<< HEAD
 /nbbuild/
 /dist/
 /nbdist/
@@ -32,31 +37,10 @@ build/
 
 ### VS Code ###
 .vscode/
-||||||| empty tree
 =======
-/target/
-!.mvn/wrapper/maven-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
 /build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
->>>>>>> origin/master
+>>>>>>> master

@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 package io.agileintelligence.ppmtool;
 
 import org.springframework.boot.SpringApplication;
+<<<<<<< HEAD
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
@@ -25,12 +25,7 @@ public class PpmtoolApplication {
 		SpringApplication.run(PpmtoolApplication.class, args);
 	}
 
-}
-||||||| empty tree
 =======
-package io.agileintelligence.ppmtool;
-
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -46,5 +41,5 @@ public class PpmtoolApplication {
 	public static void main(String[] args) {
         SpringApplication.run(PpmtoolApplication.class, args);
     }
+>>>>>>> master
 }
->>>>>>> origin/master
